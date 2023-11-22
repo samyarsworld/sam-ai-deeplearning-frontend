@@ -9,8 +9,13 @@ module.exports = {
     extend: {
       colors: {
         green: {
-          50: "#30AF5B",
-          90: "#292C27",
+          8: "#023430",
+          7: "#00684A",
+          6: "#00A35C",
+          5: "#00ED64",
+          4: "#71F6BA",
+          3: "#C0FAE6",
+          2: "#E3FCF7",
         },
         gray: {
           10: "#EEEEEE",
@@ -27,6 +32,11 @@ module.exports = {
         },
         yellow: {
           50: "#FEC601",
+        },
+        purple: {
+          1: "#B45AF2",
+          2: "#5E0C9E",
+          3: "#2D0B59",
         },
       },
       backgroundImage: {

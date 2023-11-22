@@ -5,8 +5,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="flexCenter mb-24">
-      <div className="padding-container max-container flex w-full flex-col gap-14">
+    <footer className="flexCenter mb-24" style={{ backgroundColor: "yellow" }}>
+      <div className="padding-container max-container flex w-full flex-col gap-14 mt-5">
         <div className="flex flex-col items-start justify-center gap-[10%] md:flex-row">
           <Link href="/" className="mb-10">
             <Image src="/ufo.svg" alt="logo" width={50} height={29} />
@@ -57,7 +57,7 @@ const Footer = () => {
         </div>
 
         <div className="border bg-gray-20" />
-        <p className="regular-14 w-full text-center text-gray-30">
+        <p className="regular-14 w-full text-center text-gray-30 mb-10">
           2023 SamAI | All rights reserved
         </p>
       </div>

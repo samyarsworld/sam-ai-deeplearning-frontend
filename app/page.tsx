@@ -1,5 +1,9 @@
-import React from "react";
+import TextSummarizer from "@/components/TextSummarizer";
 
-export default function page() {
-  return <div className="py-20">djkwdne</div>;
+export default function Main() {
+  return (
+    <>
+      <TextSummarizer />
+    </>
+  );
 }
