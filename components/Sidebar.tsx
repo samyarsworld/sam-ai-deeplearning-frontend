@@ -4,6 +4,7 @@ import { SIDEBAR_ITEMS } from "@/constants";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+
 const Sidebar = () => {
   const pathname = usePathname();
 
@@ -14,7 +15,7 @@ const Sidebar = () => {
           href={item.href}
           key={item.img}
           className={`sidebar-item ${
-            pathname === item.href ? "sidebar-active" : ""
+            pathname === item.href ? "sidebar-active-" + item.id : ""
           }`}
         >
           <div

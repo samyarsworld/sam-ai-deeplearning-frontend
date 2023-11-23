@@ -1,27 +1,37 @@
 // SIDEBAR
 export const SIDEBAR_ITEMS = [
-  { name: "Text Summarizer", href: "/", img: "/rob.svg", color: "#8338ec" },
   {
+    id: 1,
+    name: "Text Summarizer",
+    href: "/text-summarizer",
+    img: "/rob.svg",
+    color: "#8338ec",
+  },
+  {
+    id: 2,
     name: "Language Classifier",
-    href: "/lang-classifier",
+    href: "/language-classifier",
     img: "/language.svg",
     color: "#3a86ff",
   },
   {
+    id: 3,
     name: "Human Segmentation",
-    href: "/human-seg",
+    href: "/human-segmentation",
     img: "/human1.svg",
     color: "#ffbe0b",
   },
   {
+    id: 4,
     name: "Stock Predictor",
-    href: "/stock",
+    href: "/stock-prediction",
     img: "/chart.svg",
     color: "#ff595e",
   },
   {
+    id: 5,
     name: "Self Driving Town",
-    href: "/driving",
+    href: "/self-driving-town",
     img: "/street.svg",
     color: "#2ec4b6",
   },

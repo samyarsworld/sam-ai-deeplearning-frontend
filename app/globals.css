@@ -100,9 +100,25 @@ body {
   padding: 5px;
   border-radius: 10px;
 }
-.sidebar-active {
-  background-color: #00ed63a9;
+.sidebar-active-1 {
   font-weight: bold;
+  background-color: #8338ec;
+}
+.sidebar-active-2 {
+  font-weight: bold;
+  background-color: #3a86ff;
+}
+.sidebar-active-3 {
+  font-weight: bold;
+  background-color: #ffbe0b;
+}
+.sidebar-active-4 {
+  font-weight: bold;
+  background-color: #ff595e;
+}
+.sidebar-active-5 {
+  font-weight: bold;
+  background-color: #2ec4b6;
 }
 .sidebar-item-circle {
   width: 35px;
