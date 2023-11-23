@@ -1,74 +1,50 @@
-// NAVIGATION
-export const NAV_LINKS = [
-  { href: "/", key: "home", label: "Home" },
-  { href: "/", key: "services", label: "Services" },
-  { href: "/", key: "pricing ", label: "Pricing " },
-  { href: "/", key: "contact_us", label: "Contact Us" },
-];
-
-// CAMP SECTION
-export const PEOPLE_URL = [
-  "/person-1.png",
-  "/person-2.png",
-  "/person-3.png",
-  "/person-4.png",
-];
-
-// FEATURES SECTION
-export const FEATURES = [
+// SIDEBAR
+export const SIDEBAR_ITEMS = [
+  { name: "Text Summarizer", href: "/", img: "/rob.svg", color: "#8338ec" },
   {
-    title: "Real maps can be offline",
-    icon: "/map.svg",
-    variant: "green",
-    description:
-      "We provide a solution for you to be able to use our application when climbing, yes offline maps you can use at any time there is no signal at the location",
+    name: "Language Classifier",
+    href: "/lang-classifier",
+    img: "/language.svg",
+    color: "#3a86ff",
   },
   {
-    title: "Set an adventure schedule",
-    icon: "/calendar.svg",
-    variant: "green",
-    description:
-      "Schedule an adventure with friends. On holidays, there are many interesting offers from SamAI. That way, there's no more discussion",
+    name: "Human Segmentation",
+    href: "/human-seg",
+    img: "/human1.svg",
+    color: "#ffbe0b",
   },
   {
-    title: "Technology using augment reality",
-    icon: "/tech.svg",
-    variant: "green",
-    description:
-      "Technology uses augmented reality as a guide to your hiking trail in the forest to the top of the mountain. Already supported by the latest technology without an internet connection",
+    name: "Stock Predictor",
+    href: "/stock",
+    img: "/chart.svg",
+    color: "#ff595e",
   },
   {
-    title: "Many new locations every month",
-    icon: "/location.svg",
-    variant: "orange",
-    description:
-      "Lots of new locations every month, because we have a worldwide community of climbers who share their best experiences with climbing",
+    name: "Self Driving Town",
+    href: "/driving",
+    img: "/street.svg",
+    color: "#2ec4b6",
   },
 ];
 
-// FOOTER SECTION
-export const FOOTER_LINKS = [
+// FOOTER
+export const FOOTER_ITEMS = [
   {
     title: "Learn More",
-    links: [
-      "About SamAI",
-      "Press Releases",
-      "Jobs",
-      "Privacy Policy",
-      "Contact Us",
-    ],
+    items: ["About SamAI", "Articles", "Jobs", "Privacy Policy", "Contact Us"],
   },
 ];
 
 export const FOOTER_CONTACT_INFO = {
   title: "Contact Us",
-  links: [
+  items: [
     { label: "Phone", value: "+1(416)-540-5303" },
     { label: "Email", value: "samyarfarjam@outlook.com" },
   ],
 };
 
 export const SOCIALS = {
-  title: "Social",
-  links: ["/facebook.svg", "/instagram.svg", "/twitter.svg", "/youtube.svg"],
+  title: "Socials",
+  logos: ["/facebook.svg", "/instagram.svg", "/twitter.svg", "/github.svg"],
+  links: [],
 };

@@ -1,6 +1,6 @@
 "use client";
+import Link from "next/link";
 
-import Image from "next/image";
 import React, { useState, ChangeEvent } from "react";
 
 const TextSummarizer = () => {
@@ -12,21 +12,27 @@ const TextSummarizer = () => {
 
   return (
     <div className="mb-60 card">
-      <div className="card-header">header</div>
+      <div className="card-header">Text Summarizer</div>
 
       <div className="card-body">
         <div className="card-body-left">
           <textarea
-            className="card-body-left-textarea"
+            className="card-body-left-textarea fontsize"
             value={inputText}
             onChange={handleChange}
-            placeholder="Enter or paste your text and press 'Summarize'"
+            placeholder="Enter your text and press 'Summarize'"
           />
-          <div className="card-body-left-footing">Summarize</div>
+          <div className="card-body-left-footing regular-14">
+            <Link href="/" className="bg-violet-200 p-1.5 rounded">
+              Summarize
+            </Link>
+          </div>
         </div>
         <div className="card-body-right">
-          <div className="card-body-right-output">top</div>
-          <div className="card-body-right-footing">sentences and words</div>
+          <div className="card-body-right-output"></div>
+          <div className="card-body-right-footing regular-14">
+            sentences and words
+          </div>
         </div>
       </div>
     </div>

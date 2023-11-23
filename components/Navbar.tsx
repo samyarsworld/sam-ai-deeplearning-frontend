@@ -1,43 +1,22 @@
-import { NAV_LINKS } from "@/constants";
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import Button from "./Button";
+import { usePathname } from "next/navigation";
+import { SIDEBAR_ITEMS } from "@/constants";
 
 const Navbar = () => {
+  const pathname = usePathname();
+  const item = SIDEBAR_ITEMS.find((item) => item.href === pathname);
+
   return (
-    <nav className="flexBetween bg-green-8 text-white max-container padding-container relative z-30 py-5">
+    <nav className="flexBetween bg-green-8 text-white max-container padding-container relative z-30 py-5 navbar">
       <Link href="/">
-        <Image src="/planet.svg" alt="logo" width={60} height={30} />
+        <Image src="/planet.svg" alt="logo" width={50} height={30} />
       </Link>
 
-      <ul className="hidden h-full gap-12 lg:flex">
-        {NAV_LINKS.map((link) => (
-          <Link
-            href={link.href}
-            key={link.key}
-            className="regular-16 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"
-          >
-            {link.label}
-          </Link>
-        ))}
-      </ul>
+      <h1>{item?.name || "SamAI Playground"}</h1>
 
-      <div className="lg:flexCenter hidden">
-        <Button
-          type="button"
-          title="Login"
-          icon="/user.svg"
-          variant="btn_dark_green"
-        />
-      </div>
-
-      <Image
-        src="menu.svg"
-        alt="menu"
-        width={32}
-        height={32}
-        className="inline-block cursor-pointer lg:hidden"
-      />
+      <div className="lg:flexCenter hidden"></div>
     </nav>
   );
 };
