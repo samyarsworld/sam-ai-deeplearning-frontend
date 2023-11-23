@@ -1,10 +1,5 @@
-import StockPred from "@/components/StockPred";
-const page = () => {
-  return (
-    <div>
-      <StockPred />
-    </div>
-  );
+const StockPred = () => {
+  return <div>Stock Prediction : In Construction!</div>;
 };
 
-export default page;
+export default StockPred;

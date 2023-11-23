@@ -1,10 +1,5 @@
-import LangClassifier from "@/components/LangClassifier";
-const page = () => {
-  return (
-    <div>
-      <LangClassifier />
-    </div>
-  );
+const LangClassifier = () => {
+  return <div>Language Classification: In Construction!</div>;
 };
 
-export default page;
+export default LangClassifier;

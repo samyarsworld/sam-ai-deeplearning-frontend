@@ -1,10 +1,5 @@
-import SelfDrivingTown from "@/components/SelfDrivingTown";
-const page = () => {
-  return (
-    <div>
-      <SelfDrivingTown />
-    </div>
-  );
+const SelfDrivingTown = () => {
+  return <div>Self-driving Town: In Construction!</div>;
 };
 
-export default page;
+export default SelfDrivingTown;

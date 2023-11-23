@@ -1,10 +1,5 @@
-import HumanSeg from "@/components/HumanSeg";
-const page = () => {
-  return (
-    <div>
-      <HumanSeg />
-    </div>
-  );
+const HumanSeg = () => {
+  return <div>Human Segmentation: In Construction!</div>;
 };
 
-export default page;
+export default HumanSeg;
