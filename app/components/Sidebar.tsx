@@ -9,26 +9,20 @@ const Sidebar = () => {
   const pathname = usePathname();
 
   return (
-    <div className="sidebar bg-green-7 ">
+    <div className="w-230 h-screen overflow-auto p-4 bg-green-7 ">
       {SIDEBAR_ITEMS.map((item) => (
         <Link
           href={item.href}
           key={item.img}
-          className={`sidebar-item ${
+          className={`flex items-center p-3 rounded-lg text-sm ${
             pathname === item.href ? "sidebar-active-" + item.id : ""
           }`}
         >
           <div
-            className="sidebar-item-circle"
+            className="flexCenter w-35 h-35 rounded-full overflow-hidden mr-4"
             style={{ backgroundColor: item.color }}
           >
-            <Image
-              src={item.img}
-              alt="logo"
-              width={24}
-              height={24}
-              className="sidebar-item-logo"
-            />
+            <Image src={item.img} alt="logo" width={30} height={30} />
           </div>
           <div>{item.name}</div>
         </Link>

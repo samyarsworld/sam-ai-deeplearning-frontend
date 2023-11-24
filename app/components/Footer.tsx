@@ -5,9 +5,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="flexCenter bg-green-6 footer">
-      <div className="padding-container max-container flex w-full flex-col gap-14 mt-5 max-w-screen-lg">
-        <div className="flex flex-col items-start justify-center gap-[10%] md:flex-row">
+    <footer className="flexCenter bg-green-6 p-12 pl-20">
+      <div className="padding-container mx-auto f-col w-full  gap-14 mt-5 max-w-screen-lg">
+        <div className="f-col items-start justify-center gap-[10%] md:flex-row">
           <Link href="/" className="mb-10">
             <Image src="/ufo.svg" alt="logo" width={50} height={29} />
           </Link>
@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="flex flex-wrap gap-10 sm:justify-between md:flex-1">
             {FOOTER_ITEMS.map((columns) => (
               <FooterColumn title={columns.title}>
-                <ul className="regular-14 flex flex-col gap-4">
+                <ul className="regular-14 f-col gap-4">
                   {columns.items.map((item) => (
                     <Link href="/" key={item + columns}>
                       {item}
@@ -25,7 +25,7 @@ const Footer = () => {
               </FooterColumn>
             ))}
 
-            <div className="flex flex-col gap-5">
+            <div className="f-col gap-5">
               <FooterColumn title={FOOTER_CONTACT_INFO.title}>
                 {FOOTER_CONTACT_INFO.items.map((item) => (
                   <Link
@@ -42,7 +42,7 @@ const Footer = () => {
               </FooterColumn>
             </div>
 
-            <div className="flex flex-col gap-5">
+            <div className="f-col gap-5">
               <FooterColumn title={SOCIALS.title}>
                 <ul className="regular-14 flex gap-4 text-gray-30">
                   {SOCIALS.logos.map((logo) => (

@@ -4,7 +4,7 @@ import NavbarTitle from "./NavbarTitle";
 
 const Navbar = () => {
   return (
-    <nav className="flexBetween bg-green-8 text-white max-container padding-container relative z-30 py-5 navbar lg:pr-0">
+    <nav className="flexBetween bg-green-8 text-white relative z-30 p-24 py-5 lg:pr-0">
       <Link href="/">
         <Image src="/planet.svg" alt="logo" width={50} height={30} />
       </Link>

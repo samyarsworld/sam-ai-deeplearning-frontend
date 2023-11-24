@@ -10,7 +10,7 @@ const TextInput = () => {
   };
   return (
     <textarea
-      className="card-body-left-textarea fontsize"
+      className="w-full h-full p-[0.5rem] resize-none  outline-none"
       value={inputText}
       onChange={handleChange}
       placeholder="Enter your text and press 'Summarize'"
