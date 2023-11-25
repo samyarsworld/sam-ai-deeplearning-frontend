@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SamAI: Deep Learning Tools
 
-## Getting Started
+Welcome to SamAI, your go-to frontend interface for a variety of deep learning projects spanning healthcare, finance, autonomous vehicles, and document analysis. This repository focuses solely on the frontend aspects of these projects, providing a seamless user experience for interacting with cutting-edge deep learning models.
 
-First, run the development server:
+## Table of Contents
+
+- [Overview](#overview)
+- [Projects](#projects)
+  - [1. Text Summarization Tool](#text-summarization-tool)
+- [Usage](#usage)
+- [Technologies](#technologies)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Overview
+
+SamAI is designed to serve as the user-facing side of our deep learning projects, making it easy for users to interact with and benefit from the advanced capabilities of deep learning models. Each project is dedicated to a specific domain, utilizing deep learning models in computer vision and natural language processing.
+
+Please note that the APIs for these projects are privately implemented, incorporating deep learning concepts at a lower level. The models have been extensively trained and tested, ensuring robust performance. As a result, there are no public APIs used in this frontend.
+
+## Projects
+
+### 1. Text Summarization Tool
+
+#### Description
+
+The Text Summarization Tool is the flagship project in our collection. It harnesses the power of deep learning, specifically transformer technology, to provide an efficient and accurate text summarization solution. Users can input lengthy documents, and the tool employs advanced natural language processing models to generate concise and coherent summaries.
+
+#### Features
+
+- **Transformer Technology**: Utilizes state-of-the-art transformer models for text summarization.
+- **User-Friendly Interface**: Simple and intuitive interface for easy interaction.
+- **Multi-Domain Support**: Capable of summarizing text from various domains, including healthcare, finance, and more.
+
+## Usage
+
+To use SamAI, simply clone this repository and follow these steps:
 
 ```bash
+git clone https://github.com/your-username/samai.git
+cd samai
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser and navigate to `http://localhost:3000` to explore the projects!
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technologies
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Next.js**: A React framework for building server-side rendered applications.
+- **React**: A JavaScript library for building user interfaces.
+- **TypeScript**: A typed superset of JavaScript, enhancing code quality and maintainability.
+- **Tailwind CSS**: A utility-first CSS framework for rapidly building custom designs.
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
+We welcome contributions to SamAI! If you're interested in improving the frontend or adding features, please follow our [contribution guidelines](CONTRIBUTING.md).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This project is licensed under the [MIT License](LICENSE). Feel free to use and modify the code for your own projects.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Note:** The backend of each project, including the private APIs, is not included in this repository. For inquiries about the backend or collaboration opportunities, please contact us at [contact@samaiprojects.com](mailto:contact@samaiprojects.com).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Thank you for using SamAI!
