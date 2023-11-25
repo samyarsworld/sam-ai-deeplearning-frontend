@@ -18,8 +18,8 @@ export const SIDEBAR_ITEMS = [
     id: 3,
     name: "Human Segmentation",
     href: "/human-segmentation",
-    img: "/human1.svg",
-    color: "#ffbe0b",
+    img: "/face.svg",
+    color: "#fff",
   },
   {
     id: 4,
