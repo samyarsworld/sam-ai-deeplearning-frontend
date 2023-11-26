@@ -1,106 +1,64 @@
-"use client";
-import { useState, ChangeEvent } from "react";
-import PacmanLoader from "react-spinners/PacmanLoader";
+import TextSummarizerTool from "./TextSummarizerTool";
+import { input1, input2, output1, output2 } from "./utils.js";
 
 const TextSummarizer = () => {
-  const [inputText, setInputText] = useState("");
-  const [outputText, setOutputText] = useState("");
-  const [loading, setLoading] = useState(false);
-
-  function typeText(text: string): void {
-    let index: number = 0;
-
-    let interval = setInterval(() => {
-      if (index < text.length) {
-        setOutputText((prev) => prev + text.charAt(index));
-        index++;
-      } else {
-        clearInterval(interval);
-      }
-    }, 20);
-  }
-
-  const handleInputChange = (e: ChangeEvent<HTMLTextAreaElement>) => {
-    setInputText(e.target.value);
-  };
-
-  const handleSummarize = async () => {
-    setLoading(true);
-    setOutputText("");
-
-    try {
-      const response = await fetch("http://127.0.0.1:8000", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          input: inputText,
-        }),
-      });
-
-      console.log("hi");
-
-      if (response.ok) {
-        const data = await response.json();
-
-        setTimeout(() => {
-          setLoading(false);
-          typeText(data.meh);
-        }, 2000);
-        // setOutputText(data.meh);
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
   return (
-    <div className="mb-[200px] w-2/4 h-[400px] min-w-[700px] f-col rounded-[16px] boxShadow-1">
-      <div className="p-[0.5rem] w-full flex border-b border-1">
-        Text Summarizer
+    <div>
+      <TextSummarizerTool />
+      <div className="mb-[50px] w-2/4 p-2 text-center min-w-[500px] ml-auto mr-auto rounded-[16px] boxShadow-1">
+        <h1>
+          If you don't know where to start, below are some working examples
+        </h1>
       </div>
 
-      <div className="w-full h-full flex">
-        <div className="border-r border-1 w-full f-col">
+      <div className="mb-[40px] w-2/4 h-[400px] min-w-[700px] rounded-[16px] boxShadow-1 flex bg-green-4">
+        <div className="w-full h-full border-r border-1 p-2 f-col">
+          <div className="mr-auto ml-auto mb-3 text-[18px] font-bold">
+            Input
+          </div>
           <textarea
-            className="w-full h-full p-[0.5rem] resize-none  outline-none"
-            value={inputText}
-            onChange={handleInputChange}
-            placeholder="Enter your text and press 'Summarize'"
+            readOnly
+            className="w-full h-full p-[0.5rem] resize-none outline-none bg-green-4"
+            value={input1}
           />
-          <div className="border-t p-[0.5rem] h-[50px] border-1 regular-14">
-            <button
-              onClick={handleSummarize}
-              className="bg-violet-200 p-1 rounded"
-            >
-              Summarize
-            </button>
-          </div>
         </div>
-        <div className="f-col w-full">
-          <div className="w-full h-full p-[0.5rem]">
-            <div className="h-full">
-              {loading ? (
-                <div className="flexCenter h-full">
-                  <PacmanLoader color={"#00A35C"} size={25} />
-                </div>
-              ) : (
-                <textarea
-                  readOnly
-                  className="w-full h-full p-[0.1rem] resize-none outline-none ai-font"
-                  value={outputText}
-                  placeholder="Summary will appear here.."
-                  id="output"
-                >
-                  {outputText}
-                </textarea>
-              )}
-            </div>
+
+        <div className="w-full h-full p-2 f-col">
+          <div className="mr-auto ml-auto mb-3 font-bold text-[18px]">
+            Summary
           </div>
-          <div className="border-t p-[0.5rem] h-[50px] border-1 regular-14">
-            sentences and words
+
+          <textarea
+            readOnly
+            className="w-full h-full p-[0.5rem] resize-none outline-none bg-green-4"
+            value={output1}
+          />
+        </div>
+      </div>
+
+      <div className="mb-[40px] w-2/4 h-[400px] min-w-[700px] rounded-[16px] boxShadow-1 flex bg-green-4">
+        <div className="w-full h-full border-r border-1 p-2 f-col">
+          <div className="mr-auto ml-auto mb-3 font-bold text-[18px]">
+            Input
           </div>
+
+          <textarea
+            readOnly
+            className="w-full h-full p-[0.5rem] resize-none outline-none bg-green-4"
+            value={input2}
+          />
+        </div>
+
+        <div className="w-full h-full p-2 f-col">
+          <div className="mr-auto ml-auto mb-3 font-bold text-[18px]">
+            Summary
+          </div>
+
+          <textarea
+            readOnly
+            className="w-full h-full p-[0.5rem] resize-none outline-none bg-green-4"
+            value={output2}
+          />
         </div>
       </div>
     </div>

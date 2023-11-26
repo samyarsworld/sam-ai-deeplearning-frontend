@@ -9,7 +9,7 @@ const Sidebar = () => {
   const pathname = usePathname();
 
   return (
-    <div className="w-230 h-screen overflow-auto p-4 bg-green-7 ">
+    <div className="w-230 h-screen overflow-auto p-4 bg-gradient-to-b from-green-8 to-white">
       {SIDEBAR_ITEMS.map((item) => (
         <Link
           href={item.href}
