@@ -68,7 +68,7 @@ const TextSummarizerTool = () => {
             className="w-full h-full p-[0.5rem] resize-none  outline-none"
             value={inputText}
             onChange={handleInputChange}
-            placeholder="Enter your text and press 'Summarize'.             Please use at least 128 characters."
+            placeholder="Enter your text and press 'Summarize'.             Please use at least 150 characters."
           />
           <div className="border-t p-[0.5rem] h-[50px] border-1 regular-14">
             <button

@@ -25,7 +25,7 @@ export default function RootLayout({
 
         <div className="flex">
           <Sidebar />
-          <main className="flexCenter flex-col flex-1 overflow-hidden p-10">
+          <main className="flexCenter flex-col flex-1 overflow-hidden p-10 mr-[110px]">
             {children}
           </main>
         </div>

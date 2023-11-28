@@ -9,12 +9,12 @@ const Sidebar = () => {
   const pathname = usePathname();
 
   return (
-    <div className="w-230 h-screen overflow-auto p-4 bg-gradient-to-b from-green-8 to-white">
+    <div className="w-230 h-screen overflow-auto p-4 bg-gradient-to-b from-[#27272a] to-white">
       {SIDEBAR_ITEMS.map((item) => (
         <Link
           href={item.href}
           key={item.img}
-          className={`flex items-center p-3 rounded-lg text-sm ${
+          className={`flex items-center p-3 rounded-lg text-md text-black ${
             pathname === item.href ? "sidebar-active-" + item.id : ""
           }`}
         >

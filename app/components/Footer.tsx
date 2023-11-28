@@ -5,7 +5,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="flexCenter bg-green-8 p-12 pl-20">
+    <footer className="flexCenter bg-[#e4e4e7] p-12 pl-20">
       <div className="padding-container mx-auto f-col w-full  gap-14 mt-5 max-w-screen-lg">
         <div className="f-col items-start justify-center gap-[10%] md:flex-row">
           <Link href="/" className="mb-10">
