@@ -3,6 +3,9 @@ import { useState, ChangeEvent } from "react";
 import PacmanLoader from "react-spinners/PacmanLoader";
 import React from "react";
 
+const apiURL: string = "http://52.54.217.66:8080/predict";
+// const apiURL: string = "http://localhost:8080/predict";
+
 const TextSummarizerTool = () => {
   const [inputText, setInputText] = useState("");
   const [outputText, setOutputText] = useState("");
@@ -30,7 +33,7 @@ const TextSummarizerTool = () => {
     setOutputText("");
 
     try {
-      const response = await fetch("http://localhost:8000/predict", {
+      const response = await fetch(apiURL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -82,6 +85,16 @@ const TextSummarizerTool = () => {
         <div className="f-col w-full">
           <div className="w-full h-full p-[0.5rem]">
             <div className="h-full">
+              {loading && (
+                <div className="flexCenter h-half absolute">
+                  <p>
+                    INFERENCE STARTED:
+                    <br /> Please allow around 2 minutes for the model <br /> to
+                    evaluate
+                  </p>
+                </div>
+              )}
+
               {loading ? (
                 <div className="flexCenter h-full">
                   <PacmanLoader color={"#00A35C"} size={25} />
