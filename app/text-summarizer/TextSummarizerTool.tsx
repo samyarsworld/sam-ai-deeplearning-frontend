@@ -3,8 +3,8 @@ import { useState, ChangeEvent } from "react";
 import PacmanLoader from "react-spinners/PacmanLoader";
 import React from "react";
 
-const apiURL: string = "http://52.54.217.66:8080/predict";
-// const apiURL: string = "http://localhost:8080/predict";
+const apiURL: string = "https://sam-deeplearning-api.com/predict";
+// const apiURL: string = "http://localhost/predict";
 
 const TextSummarizerTool = () => {
   const [inputText, setInputText] = useState("");
@@ -31,6 +31,16 @@ const TextSummarizerTool = () => {
   const handleSummarize = async () => {
     setLoading(true);
     setOutputText("");
+
+    // const response = await fetch("https://sam-deeplearning-api.com", {
+    //   method: "GET",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    // });
+    // const data = await response.json();
+
+    // console.log(data);
 
     try {
       const response = await fetch(apiURL, {
