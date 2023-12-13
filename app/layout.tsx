@@ -6,8 +6,6 @@ import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import Sidebar from "@/app/components/Sidebar";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export const metadata: Metadata = {
   title: "Deep Learning",
   description: "Deep Learning",

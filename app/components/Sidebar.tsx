@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { SIDEBAR_ITEMS } from "@/constants";
+import { ITEMS } from "@/constants";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -10,7 +10,7 @@ const Sidebar = () => {
 
   return (
     <div className="w-230 h-screen overflow-auto p-4 bg-gradient-to-b from-[#27272a] to-white">
-      {SIDEBAR_ITEMS.map((item) => (
+      {ITEMS.map((item) => (
         <Link
           href={item.href}
           key={item.img}

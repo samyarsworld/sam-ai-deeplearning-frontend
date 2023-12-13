@@ -1,39 +1,44 @@
 // SIDEBAR
-export const SIDEBAR_ITEMS = [
+export const ITEMS = [
   {
     id: 1,
     name: "Text Summarizer",
     href: "/text-summarizer",
     img: "/rob.svg",
-    color: "#8338ec",
+    color: "#8338ec80",
+    desc: "A fast NLP model capable of summarizing long documents. Built on an only-encoder model using Transformers.",
   },
   {
     id: 2,
     name: "Language Classifier",
     href: "/language-classifier",
     img: "/language.svg",
-    color: "#3a86ff",
+    color: "#3a86ff80",
+    desc: "An efficient NLP model capable classifying names based on the original language. Built on RNNs and attention mechanism.",
   },
   {
     id: 3,
-    name: "Image Segmentation",
-    href: "/image-segmentation",
+    name: "Image Segmenter",
+    href: "/image-segmenter",
     img: "/medicalseg.svg",
-    color: "#fff",
+    color: "#0bff5c80",
+    desc: "A computer vision model trained to detect anomalies in medical images. Built using a CNNs and a UNET algorithm.",
   },
   {
     id: 4,
     name: "Stock Predictor",
     href: "/stock-prediction",
     img: "/chart.svg",
-    color: "#ff595e",
+    color: "#ff595e80",
+    desc: "Time series data prediction project. Attention models will be used. Design scope yet to be completed.",
   },
   {
     id: 5,
     name: "Self Driving Town",
     href: "/self-driving-town",
     img: "/street.svg",
-    color: "#2ec4b6",
+    color: "#2ec4b680",
+    desc: "An AI city operated only on autonomous vehicles. Data-driven neural networks will be used. In design scope stage.",
   },
 ];
 

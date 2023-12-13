@@ -11,14 +11,14 @@ const TextSummarizer = () => {
         </h1>
       </div>
 
-      <div className="mb-[40px] w-2/4 h-[400px] min-w-[700px] rounded-[16px] boxShadow-1 flex bg-[#fca5a5]">
+      <div className="mb-[40px] w-2/4 h-[400px] min-w-[700px] rounded-[16px] boxShadow-1 flex bg-[#ffe3e3]">
         <div className="w-full h-full border-r border-1 p-2 f-col">
           <div className="mr-auto ml-auto mb-3 text-[18px] font-bold">
             Input
           </div>
           <textarea
             readOnly
-            className="w-full h-full p-[0.5rem] resize-none outline-none bg-[#fca5a5]"
+            className="w-full h-full p-[0.5rem] resize-none outline-none bg-[#ffe3e3]"
             value={input1}
           />
         </div>
@@ -30,13 +30,13 @@ const TextSummarizer = () => {
 
           <textarea
             readOnly
-            className="w-full h-full p-[0.5rem] resize-none outline-none bg-[#fca5a5] "
+            className="w-full h-full p-[0.5rem] resize-none outline-none bg-[#ffe3e3] "
             value={output1}
           />
         </div>
       </div>
 
-      <div className="mb-[40px] w-2/4 h-[400px] min-w-[700px] rounded-[16px] boxShadow-1 flex bg-[#c4b5fd]">
+      <div className="mb-[40px] w-2/4 h-[400px] min-w-[700px] rounded-[16px] boxShadow-1 flex bg-[#e7e3f8]">
         <div className="w-full h-full border-r border-1 p-2 f-col">
           <div className="mr-auto ml-auto mb-3 font-bold text-[18px]">
             Input
@@ -44,7 +44,7 @@ const TextSummarizer = () => {
 
           <textarea
             readOnly
-            className="w-full h-full p-[0.5rem] resize-none outline-none bg-[#c4b5fd]"
+            className="w-full h-full p-[0.5rem] resize-none outline-none bg-[#e7e3f8]"
             value={input2}
           />
         </div>
@@ -56,7 +56,7 @@ const TextSummarizer = () => {
 
           <textarea
             readOnly
-            className="w-full h-full p-[0.5rem] resize-none outline-none bg-[#c4b5fd]"
+            className="w-full h-full p-[0.5rem] resize-none outline-none bg-[#e7e3f8]"
             value={output2}
           />
         </div>
