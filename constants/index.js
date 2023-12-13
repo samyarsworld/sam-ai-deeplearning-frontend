@@ -16,9 +16,9 @@ export const SIDEBAR_ITEMS = [
   },
   {
     id: 3,
-    name: "Human Segmentation",
-    href: "/human-segmentation",
-    img: "/face.svg",
+    name: "Image Segmentation",
+    href: "/image-segmentation",
+    img: "/medicalseg.svg",
     color: "#fff",
   },
   {
