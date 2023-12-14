@@ -11,12 +11,12 @@ const ImageSeg = () => {
   const [outputImage, setOutputImage] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const handleReset = (e: ChangeEvent<HTMLTextAreaElement>) => {
+  const handleReset = () => {
     setOutputImage("");
   };
 
   const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files.length !== 0) {
+    if (e.target?.files?.length !== 0) {
       // Initializer input and output
       setOutputImage("");
       setInputImage("");
@@ -85,7 +85,7 @@ const ImageSeg = () => {
         loading={loading}
         handleSubmit={handleReset}
         button="Reset"
-        handleFileChange=""
+        handleFileChange={handleFileChange}
         text="Segmented image will appear here.."
       />
     </div>

@@ -1,6 +1,16 @@
 import PacmanLoader from "react-spinners/PacmanLoader";
 
-const Card = ({
+interface CardProps {
+  image: string;
+  handleSubmit: () => void;
+  loading: boolean;
+  title: string;
+  button: string;
+  handleFileChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  text: string;
+}
+
+const Card: React.FC<CardProps> = ({
   image,
   handleSubmit,
   loading,
@@ -41,7 +51,7 @@ const Card = ({
           </div>
         </div>
         <div className="border-t p-[0.5rem] h-[50px] border-1 regular-14">
-          {handleFileChange && (
+          {title == "Image" && (
             <input
               type="file"
               className="bg-violet-200 p-1 rounded mr-4 w-[195px]"
