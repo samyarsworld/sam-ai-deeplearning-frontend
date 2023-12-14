@@ -7,25 +7,25 @@ import Card from "./SegmenterCard";
 const apiURL: string = "http://localhost:8080/segment";
 
 const ImageSeg = () => {
-  const [inputImage, setInputImage] = useState("");
-  const [outputImage, setOutputImage] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [inputImage, setInputImage] = useState<string | null>("");
+  const [outputImage, setOutputImage] = useState<string | null>("");
+  const [loading, setLoading] = useState<boolean>(false);
 
   const handleReset = () => {
     setOutputImage("");
   };
 
   const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
-    if (e.target?.files?.length !== 0) {
+    if (!e.target.files) return;
+    if (e.target.files.length !== 0) {
       // Initializer input and output
       setOutputImage("");
       setInputImage("");
 
       const reader = new FileReader();
       reader.readAsDataURL(e.target.files[0]);
-
       reader.onload = () => {
-        setInputImage(reader.result);
+        setInputImage(reader.result as string);
       };
     }
   };
