@@ -7,8 +7,8 @@ import Card from "./SegmenterCard";
 const apiURL: string = "http://localhost:8080/segment";
 
 const ImageSeg = () => {
-  const [inputImage, setInputImage] = useState<string | null>("");
-  const [outputImage, setOutputImage] = useState<string | null>("");
+  const [inputImage, setInputImage] = useState<string>("");
+  const [outputImage, setOutputImage] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
 
   const handleReset = () => {
